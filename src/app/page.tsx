@@ -5,7 +5,7 @@ import HeaderComponent from "./header/HeaderComponent";
 export default function Home() {
   return (
     <div >
-    
+       <HeaderComponent></HeaderComponent>
     </div>
   );
 }
