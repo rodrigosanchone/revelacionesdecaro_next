@@ -56,9 +56,7 @@ export default function Contact({ settings }) {
           <h2 className="text-2xl font-semibold dark:text-white">
             Contacto
           </h2>
-          <p className="mt-5 max-w-sm">
-            Hola no tengas miedo en escribirme
-          </p>
+          <p className="mt-5 max-w-sm">Hola no tengas miedo en</p>
 
           <div className="mt-5">
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
