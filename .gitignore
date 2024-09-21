@@ -32,7 +32,7 @@ yarn-error.log*
 .env.test.local
 .env.production
 .env.production.local
-/lib/firebase/
+/lib/firebase/environmen
 
 # vercel
 .vercel

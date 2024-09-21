@@ -48,7 +48,7 @@ export default function Contact({ settings }) {
         Contacto
       </h1>
       <div className="text-center">
-        <p className="text-lg">Estoy para ayudar.</p>
+        <p className="text-lg">Consultas y orientación espiritual.</p>
       </div>
 
       <div className="my-10 grid md:grid-cols-2">
@@ -56,18 +56,17 @@ export default function Contact({ settings }) {
           <h2 className="text-2xl font-semibold dark:text-white">
             Contacto
           </h2>
-          <p className="mt-5 max-w-sm">Hola no tengas miedo en</p>
+          <p className="mt-5 max-w-sm">
+            Escríbeme y con gusto te atenderé
+          </p>
 
           <div className="mt-5">
-            <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <MapPinIcon className="h-4 w-4" />
-              <span>San Jose, CR</span>
-            </div>
             {settings?.email && (
               <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
                 <EnvelopeIcon className="h-4 w-4" />
                 <a href={`mailto:${settings.email}`}>
                   {settings.email}
+                  {/*   <p>dhhdhd</p> */}
                 </a>
               </div>
             )}
