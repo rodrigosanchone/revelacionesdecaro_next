@@ -5,6 +5,7 @@ import { myLoader } from "@/utils/all";
 import VercelLogo from "../public/img/vercel.svg";
 
 export default function Footer(props) {
+      const currentYear = new Date().getFullYear();
   return (
     <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
       <div className="text-center text-sm">
@@ -16,10 +17,10 @@ export default function Footer(props) {
           {" "}
           Creado por:
           <a
-            href="https://serviwebcr.com"
+            href="https://www.rodricode.com/"
             rel="noopener"
             target="_blank">
-            Serviweb
+            rodricode.com
           </a>
         </span>
 

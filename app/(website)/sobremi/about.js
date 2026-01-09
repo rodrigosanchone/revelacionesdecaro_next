@@ -74,7 +74,7 @@ export default function About({ authors, settings }) {
         <div>
           <a
             className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-100"
-            href="https://www.facebook.com/groups/717152485846700"
+            href="https://www.facebook.com/revelacionesdecaro"
             target="_blank"
             rel="noreferrer">
             <img

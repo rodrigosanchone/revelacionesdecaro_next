@@ -32,19 +32,13 @@ export default function ArticlePage({ post }) {
         </div>
       </Container>
 
-      <div className="relative z-0 mx-auto aspect-video max-w-screen-lg overflow-hidden lg:rounded-lg">
+      <div className="relative pb-[177.78%] sm:pb-[56.25%] h-0 overflow-hidden max-w-full bg-black">
         {post.urlVideo ? (
           <>
             {" "}
             <iframe
               src={post.urlVideo}
-              width="1000"
-              height="600"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allowFullScreen={true}
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              className="absolute top-0 left-0 w-full h-full" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </>
         ) : (
           <Image

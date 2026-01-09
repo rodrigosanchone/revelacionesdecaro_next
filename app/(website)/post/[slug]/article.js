@@ -74,9 +74,7 @@ export default function Page() {
             </Link>
             <Link
               className="flex h-20 w-20 items-center justify-center rounded-full bg-sky-100"
-              href={
-                "https://api.whatsapp.com/send?text=${encodeURIComponent(message)}%20${encodeURIComponent(url)"
-              }
+              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(currentUrl)}%20${encodeURIComponent(post.titulo)}`}
               target="_blank"
               rel="noreferrer">
               <img
