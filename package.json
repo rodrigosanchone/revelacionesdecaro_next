@@ -20,7 +20,7 @@
     "@heroicons/react": "^2.1.1",
     "@portabletext/react": "^3.0.11",
     "@sanity/client": "^6.29.1",
-    "@sanity/code-input": "^7.0.4",
+    "@sanity/code-input": "^6.0.4",
     "@sanity/icons": "^2.8.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/table": "^2.0.1",
