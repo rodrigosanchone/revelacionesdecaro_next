@@ -17,19 +17,18 @@ import { table } from "@sanity/table";
 import { codeInput } from "@sanity/code-input";
 
 export const PREVIEWABLE_DOCUMENT_TYPES: string[] = ["post"];
-console.log(projectId);
 
 export default defineConfig({
   name: "default",
   title: "Revelaciones de Caro",
-  basePath: "https://revelacionesdecaro.com/",
-  projectId: projectId,
-  dataset: dataset,
+  // 👇 Sanity espera un path relativo, no una URL completa
+  basePath: "/studio",
+  projectId,
+  dataset,
 
   plugins: [
     deskTool({
-      structure: pageStructure([settings])
-      // `defaultDocumentNode` is responsible for adding a “Preview” tab to the document pane
+      structure: pageStructure([settings]),
       // defaultDocumentNode: previewDocumentNode({ apiVersion, previewSecretId }),
     }),
     singletonPlugin(["settings"]),
