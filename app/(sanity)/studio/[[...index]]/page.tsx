@@ -7,13 +7,17 @@
  * https://github.com/sanity-io/next-sanity
  */
 
-import Studio from "./studio";
+// app/(sanity)/studio/[[...index]]/page.tsx
+import { Studio } from "sanity";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
-/* export { metadata } from 'next-sanity/studio/metadata'
-export { viewport } from 'next-sanity/studio/viewport' */
+export const metadata = {
+  title: "Sanity Studio",
+  description: "Administra tu contenido con Sanity"
+};
 
-export default function StudioPage() {
-/*   return <Studio />;
-} 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1
+};
